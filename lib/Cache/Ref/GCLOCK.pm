@@ -3,7 +3,7 @@ BEGIN {
   $Cache::Ref::GCLOCK::AUTHORITY = 'cpan:NUFFIN';
 }
 BEGIN {
-  $Cache::Ref::GCLOCK::VERSION = '0.01';
+  $Cache::Ref::GCLOCK::VERSION = '0.02';
 }
 use Moose;
 

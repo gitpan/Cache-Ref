@@ -3,7 +3,7 @@ BEGIN {
   $Cache::Ref::CAR::AUTHORITY = 'cpan:NUFFIN';
 }
 BEGIN {
-  $Cache::Ref::CAR::VERSION = '0.01';
+  $Cache::Ref::CAR::VERSION = '0.02';
 }
 use Moose;
 
@@ -58,8 +58,10 @@ sub _restore_from_mru_history {
     $self->_mfu_push($e);
 }
 
-sub _expire {
-    my $self = shift;
+sub expire {
+    my ( $self, $how_many ) = @_;
+
+    $how_many ||= 1;
 
     if ( my $mru = $self->_mru ) {
         my $cur = $self->_next($mru);
@@ -102,9 +104,9 @@ sub _expire {
         }
     }
 
-    {
-        my $tail = $self->_mfu;
-        my $cur = $self->_next($tail);
+    for ( 1 .. $how_many ) {
+        my $tail = $self->_mfu || last;
+        my $cur = $self->_next($tail) || last;
 
         loop: {
             if ( $cur->[0] & Cache::Ref::CAR::Base::REF_BIT ) {
@@ -136,6 +138,8 @@ sub _expire {
             }
         }
     }
+
+    return;
 }
 
 sub _clear_additional { }

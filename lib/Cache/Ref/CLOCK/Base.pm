@@ -3,7 +3,7 @@ BEGIN {
   $Cache::Ref::CLOCK::Base::AUTHORITY = 'cpan:NUFFIN';
 }
 BEGIN {
-  $Cache::Ref::CLOCK::Base::VERSION = '0.01';
+  $Cache::Ref::CLOCK::Base::VERSION = '0.02';
 }
 use Moose::Role;
 
@@ -79,6 +79,30 @@ sub set {
         @$e = ( 0, $key, $value ); # start at 0, not k
         $self->_index_set( $key, $e );
     }
+}
+
+sub expire {
+    my ( $self, $how_many ) = @_;
+
+    my $i = $self->_hand;
+    my $b = $self->_buffer;
+
+    while ( $how_many ) {
+        if ( $$i == $#$b ) {
+            $$i = -1;
+        }
+
+        if ( my $e = $b->[++$$i] ) {
+            if ( !$e->[0] ) {
+                $self->remove($e->[1]); # also clears @$e
+                $how_many--;
+            } else {
+                $e->[0]--;
+            }
+        }
+    }
+
+    return;
 }
 
 sub _find_free_slot {

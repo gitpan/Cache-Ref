@@ -27,8 +27,8 @@ requires:
 resources:
   bugtracker: http://rt.cpan.org/Public/Dist/Display.html?Name=Cache-Ref
   homepage: http://search.cpan.org/dist/Cache-Ref
-  repository: git://github.com/rafl/cache-ref.git
-version: 0.01
+  repository: git://github.com/nothingmuch/cache-ref.git
+version: 0.02
 x_Dist_Zilla:
   plugins:
     -
@@ -131,6 +131,10 @@ x_Dist_Zilla:
       class: Dist::Zilla::Plugin::AutoPrereq
       name: '@Filter/AutoPrereq'
       version: 4.101612
+    -
+      class: Dist::Zilla::Plugin::Signature
+      name: '@Filter/Signature'
+      version: 1.100930
     -
       class: Dist::Zilla::Plugin::FinderCode
       name: ':InstallModules'

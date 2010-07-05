@@ -3,7 +3,7 @@ BEGIN {
   $Cache::Ref::CAR::Base::AUTHORITY = 'cpan:NUFFIN';
 }
 BEGIN {
-  $Cache::Ref::CAR::Base::VERSION = '0.01';
+  $Cache::Ref::CAR::Base::VERSION = '0.02';
 }
 use Moose::Role;
 
@@ -36,8 +36,6 @@ requires qw(
 
     _decrease_mru_target_size
     _increase_mru_target_size
-
-    _expire
 );
 
 with (
@@ -278,7 +276,7 @@ sub set {
 
     # the live cache entries are full, we need to expire something
     if ( $self->_mru_size + $self->_mfu_size == $self->size ) {
-        $self->_expire();
+        $self->expire(1);
 
         # if the entry wasn't in history we may need to free up something from
         # there too, to make room for whatever just expired
@@ -393,8 +391,6 @@ sub remove {
 
 __PACKAGE__;
 
-# ex: set sw=4 et:
-
 
 __END__
 =pod
@@ -404,6 +400,43 @@ __END__
 =head1 NAME
 
 Cache::Ref::CAR::Base
+
+=head1 SYNOPSIS
+
+    # see CAR or CART
+
+=head1 DESCRIPTION
+
+This role provides the common functionality for L<Cache::Ref::CAR> and L<Cache::Ref::CART>.
+
+=head1 NAME
+
+Cache::Ref::CAR::Base - base clase for CAR and CART
+
+=head1 METHODS
+
+=over 4
+
+=item get @keys
+
+Fetch data from the cache
+
+=item set $key, $value
+
+Insert data to the cache
+
+=item remove @keys
+
+Remove entries from the cache. Not in the original CAR algorithm description.
+
+=item expire $x
+
+Removes C<$x> elements from the cache (hopefully the most useless
+ones). The default value for C<$x> is 1.
+
+=back
+
+# ex: set sw=4 et:
 
 =head1 AUTHOR
 

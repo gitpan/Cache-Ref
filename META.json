@@ -48,11 +48,11 @@
       "homepage" : "http://search.cpan.org/dist/Cache-Ref",
       "repository" : {
          "type" : "git",
-         "url" : "git://github.com/rafl/cache-ref.git",
-         "web" : "http://github.com/rafl/cache-ref"
+         "url" : "git://github.com/nothingmuch/cache-ref.git",
+         "web" : "http://github.com/nothingmuch/cache-ref"
       }
    },
-   "version" : "0.01",
+   "version" : "0.02",
    "x_Dist_Zilla" : {
       "plugins" : [
          {
@@ -179,6 +179,11 @@
             "class" : "Dist::Zilla::Plugin::AutoPrereq",
             "name" : "@Filter/AutoPrereq",
             "version" : "4.101612"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::Signature",
+            "name" : "@Filter/Signature",
+            "version" : "1.100930"
          },
          {
             "class" : "Dist::Zilla::Plugin::FinderCode",

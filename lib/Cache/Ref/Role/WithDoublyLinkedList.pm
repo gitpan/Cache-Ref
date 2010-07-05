@@ -3,7 +3,7 @@ BEGIN {
   $Cache::Ref::Role::WithDoublyLinkedList::AUTHORITY = 'cpan:NUFFIN';
 }
 BEGIN {
-  $Cache::Ref::Role::WithDoublyLinkedList::VERSION = '0.01';
+  $Cache::Ref::Role::WithDoublyLinkedList::VERSION = '0.02';
 }
 use MooseX::Role::Parameterized;
 

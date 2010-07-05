@@ -3,7 +3,7 @@ BEGIN {
   $Cache::Ref::Role::API::AUTHORITY = 'cpan:NUFFIN';
 }
 BEGIN {
-  $Cache::Ref::Role::API::VERSION = '0.01';
+  $Cache::Ref::Role::API::VERSION = '0.02';
 }
 use Moose::Role;
 
@@ -17,6 +17,7 @@ requires qw(
     remove
     clear
     hit
+    expire
 );
 
 sub compute {

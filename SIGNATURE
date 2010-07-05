@@ -1,0 +1,61 @@
+This file contains message digests of all files listed in MANIFEST,
+signed via the Module::Signature module, version 0.62.
+
+To verify the content in this distribution, first make sure you have
+Module::Signature installed, then type:
+
+    % cpansign -v
+
+It will check each file's integrity, as well as the signature's
+validity.  If "==> Signature verified OK! <==" is not displayed,
+the distribution may already have been compromised, and you should
+not run its Makefile.PL or Build.PL.
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+SHA1 8538c50b3d3c0f419dfc9beadca01898f174b58b Changes
+SHA1 d4500ad0fc7d631fcca4f7d8722e2d541cd89d69 LICENSE
+SHA1 ae884d3f9618eca4bc386e9c1ab5729413c5a521 MANIFEST
+SHA1 b680346f5eb0acd36be9b0cb9783899e9a5c0e22 META.json
+SHA1 5c1db409e97946281c000d833d57d626db8ca556 META.yml
+SHA1 001d22aab007d6f833f373118eb979c7ea3114e5 Makefile.PL
+SHA1 b6ccf8c05a0fbc74dc6c6f6c690894dca244c55f README
+SHA1 8a98a39fe09972b297ed932755f79c1e29d5cbb4 dist.ini
+SHA1 3c16a9471a9577c3bab4518734da804c8cf7de1e lib/Cache/Ref.pm
+SHA1 68e51544b4e98305d90646c3b400de582e8ed698 lib/Cache/Ref/CAR.pm
+SHA1 41800787d510f57e4e1fd4edc5e22a9c0eb4fa9c lib/Cache/Ref/CAR/Base.pm
+SHA1 722957864c347dadb1fd3c2b86002b31c6d6eb8b lib/Cache/Ref/CART.pm
+SHA1 d8b94707938c6e5c9d837a0db93b2e2d57ff2503 lib/Cache/Ref/CLOCK.pm
+SHA1 edff751e12fe1ee1aff77b45d0e161512df80d73 lib/Cache/Ref/CLOCK/Base.pm
+SHA1 a546c0d7cf8515cf97f51eb47d685209004f4858 lib/Cache/Ref/FIFO.pm
+SHA1 67920be81107f8f61999e56419f7ae31e1777e4b lib/Cache/Ref/GCLOCK.pm
+SHA1 b3aa74b91f32f613487bae444e35e38ff8393939 lib/Cache/Ref/LIFO.pm
+SHA1 cc0ed9a099bdd12cb96d42932976cc0daa8ff211 lib/Cache/Ref/LRU.pm
+SHA1 d19c96951f7ac78919e4f60170b9dd6fb663bd15 lib/Cache/Ref/Null.pm
+SHA1 7dfce204646d64a954423d5323c80b13ac9b1306 lib/Cache/Ref/Random.pm
+SHA1 1f3044c534327ccd31bf1bd741eef953de4f9f43 lib/Cache/Ref/Role/API.pm
+SHA1 8fe4ad71543ce2859c73b00468318c6dc46edfd7 lib/Cache/Ref/Role/Index.pm
+SHA1 423a0fcf236f3898f8e789e831ca27d5cece3681 lib/Cache/Ref/Role/WithDoublyLinkedList.pm
+SHA1 bd11f23d2fd9b519d776df76174f5ae793f28ff3 lib/Cache/Ref/Util/LRU/API.pm
+SHA1 7502aafef3cec7c3036bb263c3a3153a8c87fdeb lib/Cache/Ref/Util/LRU/Array.pm
+SHA1 30857e652a7159113a3d02ff9c2e0138790dd45c lib/Cache/Ref/Util/LRU/List.pm
+SHA1 c8416b608cbb3cd4a91c1590c5bc11ef5f75999f t/car.t
+SHA1 1d8eeef043fede607abe6cf080fb18d37533abba t/clock.t
+SHA1 4bdbe95debc81dc71b3717f5f760d0481e8a5678 t/fifo.t
+SHA1 c5080fbe629993680173f2f19db61e0e12903bc0 t/lifo.t
+SHA1 2091d451d0c902eacdc91b22a050bf914df1b71b t/lru.t
+SHA1 810354c5ede969a7f64e3daf0e2ee1c84fcdebe9 t/null.t
+SHA1 1a9668457349526581b26e71e2b23fedc38bddf8 t/random.t
+SHA1 a032c41ef6887fab1b900669c2d304fab46680e2 t/release-eol.t
+SHA1 455d1dd1867212a665ad5ea4126b572411de300c t/release-no-tabs.t
+SHA1 9433c240fe590bc404ab68ff63984df763e347ed t/release-pod-coverage.t
+SHA1 b30cbdfaf935017c4568c0c91b242438cb87786e t/release-pod-syntax.t
+SHA1 14b29007b90d4e6db6a21f9b0afc784dda608ea5 t/util_lru.t
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG/MacGPG2 v2.0.12 (Darwin)
+
+iEYEARECAAYFAkwx7NwACgkQVCwRwOvSdBhmQgCgsMGA5VaR9ehDDQgVzBtglhZe
+3CMAnR7tV0nrQcrww3Ux9jtarDMKkn8O
+=wzVQ
+-----END PGP SIGNATURE-----

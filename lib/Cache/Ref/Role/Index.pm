@@ -3,7 +3,7 @@ BEGIN {
   $Cache::Ref::Role::Index::AUTHORITY = 'cpan:NUFFIN';
 }
 BEGIN {
-  $Cache::Ref::Role::Index::VERSION = '0.01';
+  $Cache::Ref::Role::Index::VERSION = '0.02';
 }
 use Moose::Role;
 
@@ -22,6 +22,11 @@ has _index => (
 sub _index_clear {
     my $self = shift;
     %{ $self->_index } = ();
+}
+
+sub _index_keys {
+    my $self = shift;
+    keys %{ $self->_index };
 }
 
 sub _index_get {
