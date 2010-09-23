@@ -3,8 +3,10 @@ BEGIN {
   $Cache::Ref::CLOCK::AUTHORITY = 'cpan:NUFFIN';
 }
 BEGIN {
-  $Cache::Ref::CLOCK::VERSION = '0.02';
+  $Cache::Ref::CLOCK::VERSION = '0.03';
 }
+# ABSTRACT: CLOCK cache replacement algorithm
+
 use Moose;
 
 use namespace::autoclean;
@@ -40,7 +42,7 @@ __END__
 
 =head1 NAME
 
-Cache::Ref::CLOCK
+Cache::Ref::CLOCK - CLOCK cache replacement algorithm
 
 =head1 SYNOPSIS
 
@@ -58,10 +60,6 @@ It is a very well accepted page replacement algorithm, but largely for reasons
 which are irrelevant in this context (cache hits don't need to be serialized in
 a multiprocessing context as they only require an idempotent operation (setting
 a bit to 1)).
-
-=head1 NAME
-
-Cache::Ref::CLOCK - CLOCK cache replacement algorithm
 
 =head1 ATTRIBUTES
 
@@ -88,7 +86,7 @@ efficient for any C<k> bigger than 1.
 
 =head1 AUTHOR
 
-  Yuval Kogman
+Yuval Kogman
 
 =head1 COPYRIGHT AND LICENSE
 

@@ -3,7 +3,7 @@ BEGIN {
   $Cache::Ref::Util::LRU::Array::AUTHORITY = 'cpan:NUFFIN';
 }
 BEGIN {
-  $Cache::Ref::Util::LRU::Array::VERSION = '0.02';
+  $Cache::Ref::Util::LRU::Array::VERSION = '0.03';
 }
 use Moose;
 
@@ -88,7 +88,7 @@ Cache::Ref::Util::LRU::Array
 
 =head1 AUTHOR
 
-  Yuval Kogman
+Yuval Kogman
 
 =head1 COPYRIGHT AND LICENSE
 

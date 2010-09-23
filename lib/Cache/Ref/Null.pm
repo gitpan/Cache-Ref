@@ -3,8 +3,10 @@ BEGIN {
   $Cache::Ref::Null::AUTHORITY = 'cpan:NUFFIN';
 }
 BEGIN {
-  $Cache::Ref::Null::VERSION = '0.02';
+  $Cache::Ref::Null::VERSION = '0.03';
 }
+# ABSTRACT: Caches nothing
+
 use Moose;
 
 use namespace::autoclean;
@@ -33,7 +35,7 @@ __PACKAGE__;
 
 =head1 NAME
 
-Cache::Ref::Null
+Cache::Ref::Null - Caches nothing
 
 =head1 SYNOPSIS
 
@@ -57,13 +59,9 @@ without a cache against runtime with a cache.
 It's like L<Cache::Null> but supports the additional methods in
 L<Cache::Ref>.
 
-=head1 NAME
-
-Cache::Ref::Null - Caches nothing
-
 =head1 AUTHOR
 
-  Yuval Kogman
+Yuval Kogman
 
 =head1 COPYRIGHT AND LICENSE
 

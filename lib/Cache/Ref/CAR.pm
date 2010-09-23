@@ -3,8 +3,10 @@ BEGIN {
   $Cache::Ref::CAR::AUTHORITY = 'cpan:NUFFIN';
 }
 BEGIN {
-  $Cache::Ref::CAR::VERSION = '0.02';
+  $Cache::Ref::CAR::VERSION = '0.03';
 }
+# ABSTRACT: CLOCK with Adaptive Replacement
+
 use Moose;
 
 use List::Util qw(max min);
@@ -159,7 +161,7 @@ __END__
 
 =head1 NAME
 
-Cache::Ref::CAR
+Cache::Ref::CAR - CLOCK with Adaptive Replacement
 
 =head1 SYNOPSIS
 
@@ -177,10 +179,6 @@ See also L<Cache::Ref::CART> which is probably more appropriate for random acces
 CAR balances between an MFU like policy and an MRU like policy, automatically
 tuning itself as the workload varies.
 
-=head1 NAME
-
-Cache::Ref::CAR - CLOCK with Adaptive Replacement
-
 =head1 ATTRIBUTES
 
 =over 4
@@ -197,7 +195,7 @@ double what L<Cache::Ref::LRU> requires.
 
 =head1 AUTHOR
 
-  Yuval Kogman
+Yuval Kogman
 
 =head1 COPYRIGHT AND LICENSE
 

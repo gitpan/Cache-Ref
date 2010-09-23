@@ -3,7 +3,7 @@ BEGIN {
   $Cache::Ref::Random::AUTHORITY = 'cpan:NUFFIN';
 }
 BEGIN {
-  $Cache::Ref::Random::VERSION = '0.02';
+  $Cache::Ref::Random::VERSION = '0.03';
 }
 use Moose;
 
@@ -57,8 +57,8 @@ sub set {
 sub expire {
     my ( $self, $how_many ) = @_;
 
-    my $s = $self->_index_size;
-    my @slice = map { int rand $s } 1 .. ($how_many || 1);
+    my @s = ( 0 .. $self->_index_size - 1);
+    my @slice = map { splice @s, int rand @s, 1 } 1 .. ($how_many || 1);
 
     my @keys = ($self->_index_keys)[@slice];
 
@@ -83,7 +83,7 @@ Cache::Ref::Random
 
 =head1 AUTHOR
 
-  Yuval Kogman
+Yuval Kogman
 
 =head1 COPYRIGHT AND LICENSE
 

@@ -3,7 +3,7 @@ BEGIN {
   $Cache::Ref::Util::LRU::API::AUTHORITY = 'cpan:NUFFIN';
 }
 BEGIN {
-  $Cache::Ref::Util::LRU::API::VERSION = '0.02';
+  $Cache::Ref::Util::LRU::API::VERSION = '0.03';
 }
 use Moose::Role;
 
@@ -38,7 +38,7 @@ Cache::Ref::Util::LRU::API
 
 =head1 AUTHOR
 
-  Yuval Kogman
+Yuval Kogman
 
 =head1 COPYRIGHT AND LICENSE
 

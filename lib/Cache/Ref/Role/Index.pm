@@ -3,7 +3,7 @@ BEGIN {
   $Cache::Ref::Role::Index::AUTHORITY = 'cpan:NUFFIN';
 }
 BEGIN {
-  $Cache::Ref::Role::Index::VERSION = '0.02';
+  $Cache::Ref::Role::Index::VERSION = '0.03';
 }
 use Moose::Role;
 
@@ -65,7 +65,7 @@ Cache::Ref::Role::Index
 
 =head1 AUTHOR
 
-  Yuval Kogman
+Yuval Kogman
 
 =head1 COPYRIGHT AND LICENSE
 

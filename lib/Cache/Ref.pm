@@ -3,8 +3,10 @@ BEGIN {
   $Cache::Ref::AUTHORITY = 'cpan:NUFFIN';
 }
 BEGIN {
-  $Cache::Ref::VERSION = '0.02';
+  $Cache::Ref::VERSION = '0.03';
 }
+# ABSTRACT: Memory only cache of live references
+
 use Moose;
 
 __PACKAGE__->meta->make_immutable;
@@ -21,7 +23,7 @@ __END__
 
 =head1 NAME
 
-Cache::Ref
+Cache::Ref - Memory only cache of live references
 
 =head1 SYNOPSIS
 
@@ -60,10 +62,6 @@ persistently, this module implements in memory caching, designed primarily for
 B<shared references> in memory.
 
 This collection of classes implements a number of semi related algorithms.
-
-=head1 NAME
-
-Cache::Ref - Memory only cache of live references
 
 =head1 METHODS
 
@@ -241,7 +239,7 @@ L<http://github.com/nothingmuch/Cache-Ref>
 
 =head1 AUTHOR
 
-  Yuval Kogman
+Yuval Kogman
 
 =head1 COPYRIGHT AND LICENSE
 

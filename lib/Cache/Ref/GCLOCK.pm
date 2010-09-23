@@ -3,8 +3,10 @@ BEGIN {
   $Cache::Ref::GCLOCK::AUTHORITY = 'cpan:NUFFIN';
 }
 BEGIN {
-  $Cache::Ref::GCLOCK::VERSION = '0.02';
+  $Cache::Ref::GCLOCK::VERSION = '0.03';
 }
+# ABSTRACT: GCLOCK cache replacement algorithm
+
 use Moose;
 
 use namespace::autoclean;
@@ -34,7 +36,7 @@ __END__
 
 =head1 NAME
 
-Cache::Ref::GCLOCK
+Cache::Ref::GCLOCK - GCLOCK cache replacement algorithm
 
 =head1 SYNOPSIS
 
@@ -50,10 +52,6 @@ cache hits from C<k>, a counter is increased on every hit.
 This provides behavior which models an LFU expiry policy (without taking into
 account the full keyspace).
 
-=head1 NAME
-
-Cache::Ref::GCLOCK - GCLOCK cache replacement algorithm
-
 =head1 ATTRIBUTES
 
 =over 4
@@ -66,7 +64,7 @@ The size of the live entries.
 
 =head1 AUTHOR
 
-  Yuval Kogman
+Yuval Kogman
 
 =head1 COPYRIGHT AND LICENSE
 

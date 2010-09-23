@@ -3,8 +3,10 @@ BEGIN {
   $Cache::Ref::CART::AUTHORITY = 'cpan:NUFFIN';
 }
 BEGIN {
-  $Cache::Ref::CART::VERSION = '0.02';
+  $Cache::Ref::CART::VERSION = '0.03';
 }
+# ABSTRACT: CAR with temporal filtering
+
 use Moose;
 
 use List::Util qw(max min);
@@ -243,7 +245,7 @@ __END__
 
 =head1 NAME
 
-Cache::Ref::CART
+Cache::Ref::CART - CAR with temporal filtering
 
 =head1 SYNOPSIS
 
@@ -262,10 +264,6 @@ be expired but known in the history.
 
 This is probably the most general purpose caching algorithm.
 
-=head1 NAME
-
-Cache::Ref::CART - CAR with temporal filtering
-
 =head1 ATTRIBUTES
 
 =over 4
@@ -282,7 +280,7 @@ double what L<Cache::Ref::LRU> requires.
 
 =head1 AUTHOR
 
-  Yuval Kogman
+Yuval Kogman
 
 =head1 COPYRIGHT AND LICENSE
 

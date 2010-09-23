@@ -3,7 +3,7 @@ BEGIN {
   $Cache::Ref::FIFO::AUTHORITY = 'cpan:NUFFIN';
 }
 BEGIN {
-  $Cache::Ref::FIFO::VERSION = '0.02';
+  $Cache::Ref::FIFO::VERSION = '0.03';
 }
 use Moose;
 
@@ -94,7 +94,7 @@ Cache::Ref::FIFO
 
 =head1 AUTHOR
 
-  Yuval Kogman
+Yuval Kogman
 
 =head1 COPYRIGHT AND LICENSE
 

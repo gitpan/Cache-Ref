@@ -3,7 +3,7 @@ BEGIN {
   $Cache::Ref::CLOCK::Base::AUTHORITY = 'cpan:NUFFIN';
 }
 BEGIN {
-  $Cache::Ref::CLOCK::Base::VERSION = '0.02';
+  $Cache::Ref::CLOCK::Base::VERSION = '0.03';
 }
 use Moose::Role;
 
@@ -146,7 +146,7 @@ Cache::Ref::CLOCK::Base
 
 =head1 AUTHOR
 
-  Yuval Kogman
+Yuval Kogman
 
 =head1 COPYRIGHT AND LICENSE
 

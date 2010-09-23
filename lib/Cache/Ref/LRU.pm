@@ -3,8 +3,10 @@ BEGIN {
   $Cache::Ref::LRU::AUTHORITY = 'cpan:NUFFIN';
 }
 BEGIN {
-  $Cache::Ref::LRU::VERSION = '0.02';
+  $Cache::Ref::LRU::VERSION = '0.03';
 }
+# ABSTRACT: Least recently used expiry policy
+
 use Moose;
 
 use Cache::Ref::Util::LRU::List;
@@ -115,7 +117,7 @@ __END__
 
 =head1 NAME
 
-Cache::Ref::LRU
+Cache::Ref::LRU - Least recently used expiry policy
 
 =head1 SYNOPSIS
 
@@ -129,10 +131,6 @@ This is an implementation of the least recently used expiry policy.
 
 It provides both an array and a doubly linked list based implementation. See
 L<Cache::Ref> for a discussion.
-
-=head1 NAME
-
-Cache::Ref::LRU - Least recently used expiry policy
 
 =head1 ATTRIBUTES
 
@@ -150,7 +148,7 @@ The class of the LRU list implementation.
 
 =head1 AUTHOR
 
-  Yuval Kogman
+Yuval Kogman
 
 =head1 COPYRIGHT AND LICENSE
 

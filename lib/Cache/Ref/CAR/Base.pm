@@ -3,8 +3,10 @@ BEGIN {
   $Cache::Ref::CAR::Base::AUTHORITY = 'cpan:NUFFIN';
 }
 BEGIN {
-  $Cache::Ref::CAR::Base::VERSION = '0.02';
+  $Cache::Ref::CAR::Base::VERSION = '0.03';
 }
+# ABSTRACT: base clase for CAR and CART
+
 use Moose::Role;
 
 # TODO
@@ -399,7 +401,7 @@ __END__
 
 =head1 NAME
 
-Cache::Ref::CAR::Base
+Cache::Ref::CAR::Base - base clase for CAR and CART
 
 =head1 SYNOPSIS
 
@@ -408,10 +410,6 @@ Cache::Ref::CAR::Base
 =head1 DESCRIPTION
 
 This role provides the common functionality for L<Cache::Ref::CAR> and L<Cache::Ref::CART>.
-
-=head1 NAME
-
-Cache::Ref::CAR::Base - base clase for CAR and CART
 
 =head1 METHODS
 
@@ -440,7 +438,7 @@ ones). The default value for C<$x> is 1.
 
 =head1 AUTHOR
 
-  Yuval Kogman
+Yuval Kogman
 
 =head1 COPYRIGHT AND LICENSE
 

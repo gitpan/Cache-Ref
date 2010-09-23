@@ -3,8 +3,10 @@ BEGIN {
   $Cache::Ref::LIFO::AUTHORITY = 'cpan:NUFFIN';
 }
 BEGIN {
-  $Cache::Ref::LIFO::VERSION = '0.02';
+  $Cache::Ref::LIFO::VERSION = '0.03';
 }
+# ABSTRACT: Saves entries until full, discarding subsequent sets.
+
 use Moose;
 
 use namespace::autoclean;
@@ -97,7 +99,7 @@ __PACKAGE__;
 
 =head1 NAME
 
-Cache::Ref::LIFO
+Cache::Ref::LIFO - Saves entries until full, discarding subsequent sets.
 
 =head1 SYNOPSIS
 
@@ -118,13 +120,9 @@ provided the MFU is used early on.
 
 The advantages is that the code is very simple as a result.
 
-=head1 NAME
-
-Cache::Ref::LIFO - Saves entries until full, discarding subsequent sets.
-
 =head1 AUTHOR
 
-  Yuval Kogman
+Yuval Kogman
 
 =head1 COPYRIGHT AND LICENSE
 
