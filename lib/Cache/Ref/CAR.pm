@@ -3,7 +3,7 @@ BEGIN {
   $Cache::Ref::CAR::AUTHORITY = 'cpan:NUFFIN';
 }
 BEGIN {
-  $Cache::Ref::CAR::VERSION = '0.03';
+  $Cache::Ref::CAR::VERSION = '0.04';
 }
 # ABSTRACT: CLOCK with Adaptive Replacement
 

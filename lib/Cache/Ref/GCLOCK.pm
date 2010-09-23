@@ -3,7 +3,7 @@ BEGIN {
   $Cache::Ref::GCLOCK::AUTHORITY = 'cpan:NUFFIN';
 }
 BEGIN {
-  $Cache::Ref::GCLOCK::VERSION = '0.03';
+  $Cache::Ref::GCLOCK::VERSION = '0.04';
 }
 # ABSTRACT: GCLOCK cache replacement algorithm
 

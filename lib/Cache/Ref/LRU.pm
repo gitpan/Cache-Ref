@@ -3,7 +3,7 @@ BEGIN {
   $Cache::Ref::LRU::AUTHORITY = 'cpan:NUFFIN';
 }
 BEGIN {
-  $Cache::Ref::LRU::VERSION = '0.03';
+  $Cache::Ref::LRU::VERSION = '0.04';
 }
 # ABSTRACT: Least recently used expiry policy
 

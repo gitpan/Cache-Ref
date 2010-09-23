@@ -3,7 +3,7 @@ BEGIN {
   $Cache::Ref::FIFO::AUTHORITY = 'cpan:NUFFIN';
 }
 BEGIN {
-  $Cache::Ref::FIFO::VERSION = '0.03';
+  $Cache::Ref::FIFO::VERSION = '0.04';
 }
 use Moose;
 

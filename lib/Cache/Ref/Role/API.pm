@@ -3,7 +3,7 @@ BEGIN {
   $Cache::Ref::Role::API::AUTHORITY = 'cpan:NUFFIN';
 }
 BEGIN {
-  $Cache::Ref::Role::API::VERSION = '0.03';
+  $Cache::Ref::Role::API::VERSION = '0.04';
 }
 use Moose::Role;
 

@@ -3,7 +3,7 @@ BEGIN {
   $Cache::Ref::Role::Index::AUTHORITY = 'cpan:NUFFIN';
 }
 BEGIN {
-  $Cache::Ref::Role::Index::VERSION = '0.03';
+  $Cache::Ref::Role::Index::VERSION = '0.04';
 }
 use Moose::Role;
 

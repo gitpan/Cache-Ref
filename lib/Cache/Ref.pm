@@ -3,7 +3,7 @@ BEGIN {
   $Cache::Ref::AUTHORITY = 'cpan:NUFFIN';
 }
 BEGIN {
-  $Cache::Ref::VERSION = '0.03';
+  $Cache::Ref::VERSION = '0.04';
 }
 # ABSTRACT: Memory only cache of live references
 

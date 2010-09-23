@@ -52,7 +52,7 @@
          "web" : "http://github.com/nothingmuch/cache-ref"
       }
    },
-   "version" : "0.03",
+   "version" : "0.04",
    "x_Dist_Zilla" : {
       "plugins" : [
          {

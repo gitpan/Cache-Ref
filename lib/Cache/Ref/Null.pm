@@ -3,7 +3,7 @@ BEGIN {
   $Cache::Ref::Null::AUTHORITY = 'cpan:NUFFIN';
 }
 BEGIN {
-  $Cache::Ref::Null::VERSION = '0.03';
+  $Cache::Ref::Null::VERSION = '0.04';
 }
 # ABSTRACT: Caches nothing
 

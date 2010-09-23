@@ -3,7 +3,7 @@ BEGIN {
   $Cache::Ref::CLOCK::Base::AUTHORITY = 'cpan:NUFFIN';
 }
 BEGIN {
-  $Cache::Ref::CLOCK::Base::VERSION = '0.03';
+  $Cache::Ref::CLOCK::Base::VERSION = '0.04';
 }
 use Moose::Role;
 

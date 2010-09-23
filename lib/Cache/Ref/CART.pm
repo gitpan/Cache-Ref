@@ -3,7 +3,7 @@ BEGIN {
   $Cache::Ref::CART::AUTHORITY = 'cpan:NUFFIN';
 }
 BEGIN {
-  $Cache::Ref::CART::VERSION = '0.03';
+  $Cache::Ref::CART::VERSION = '0.04';
 }
 # ABSTRACT: CAR with temporal filtering
 

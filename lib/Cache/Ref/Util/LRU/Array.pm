@@ -3,7 +3,7 @@ BEGIN {
   $Cache::Ref::Util::LRU::Array::AUTHORITY = 'cpan:NUFFIN';
 }
 BEGIN {
-  $Cache::Ref::Util::LRU::Array::VERSION = '0.03';
+  $Cache::Ref::Util::LRU::Array::VERSION = '0.04';
 }
 use Moose;
 

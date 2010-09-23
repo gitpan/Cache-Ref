@@ -3,7 +3,7 @@ BEGIN {
   $Cache::Ref::LIFO::AUTHORITY = 'cpan:NUFFIN';
 }
 BEGIN {
-  $Cache::Ref::LIFO::VERSION = '0.03';
+  $Cache::Ref::LIFO::VERSION = '0.04';
 }
 # ABSTRACT: Saves entries until full, discarding subsequent sets.
 

@@ -28,7 +28,7 @@ resources:
   bugtracker: http://rt.cpan.org/Public/Dist/Display.html?Name=Cache-Ref
   homepage: http://search.cpan.org/dist/Cache-Ref
   repository: git://github.com/nothingmuch/cache-ref.git
-version: 0.03
+version: 0.04
 x_Dist_Zilla:
   plugins:
     -

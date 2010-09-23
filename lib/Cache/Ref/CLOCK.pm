@@ -3,7 +3,7 @@ BEGIN {
   $Cache::Ref::CLOCK::AUTHORITY = 'cpan:NUFFIN';
 }
 BEGIN {
-  $Cache::Ref::CLOCK::VERSION = '0.03';
+  $Cache::Ref::CLOCK::VERSION = '0.04';
 }
 # ABSTRACT: CLOCK cache replacement algorithm
 

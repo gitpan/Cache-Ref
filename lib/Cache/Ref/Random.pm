@@ -3,7 +3,7 @@ BEGIN {
   $Cache::Ref::Random::AUTHORITY = 'cpan:NUFFIN';
 }
 BEGIN {
-  $Cache::Ref::Random::VERSION = '0.03';
+  $Cache::Ref::Random::VERSION = '0.04';
 }
 use Moose;
 
