@@ -13,8 +13,7 @@ my %WriteMakefileArgs = (
   'AUTHOR' => 'Yuval Kogman',
   'BUILD_REQUIRES' => {
     'Test::Moose' => '0',
-    'Test::More' => '0',
-    'ok' => '0'
+    'Test::More' => '0'
   },
   'CONFIGURE_REQUIRES' => {
     'ExtUtils::MakeMaker' => '6.31'
@@ -33,7 +32,7 @@ my %WriteMakefileArgs = (
     'Scalar::Util' => '0',
     'namespace::autoclean' => '0'
   },
-  'VERSION' => '0.04',
+  'VERSION' => '0.05',
   'test' => {
     'TESTS' => 't/*.t'
   }

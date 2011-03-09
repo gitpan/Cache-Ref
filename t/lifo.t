@@ -5,7 +5,7 @@ use warnings;
 
 use Test::More;
 
-use ok 'Cache::Ref::LIFO';
+use_ok 'Cache::Ref::LIFO';
 
 {
     my $c = Cache::Ref::LIFO->new( size => 3 );

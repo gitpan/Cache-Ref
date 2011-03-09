@@ -3,7 +3,7 @@ BEGIN {
   $Cache::Ref::CLOCK::AUTHORITY = 'cpan:NUFFIN';
 }
 BEGIN {
-  $Cache::Ref::CLOCK::VERSION = '0.04';
+  $Cache::Ref::CLOCK::VERSION = '0.05'; # TRIAL
 }
 # ABSTRACT: CLOCK cache replacement algorithm
 
@@ -90,7 +90,7 @@ Yuval Kogman
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2010 by Yuval Kogman.
+This software is copyright (c) 2011 by Yuval Kogman.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.

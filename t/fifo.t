@@ -5,7 +5,7 @@ use warnings;
 
 use Test::More;
 
-use ok 'Cache::Ref::FIFO';
+use_ok 'Cache::Ref::FIFO';
 
 {
     my $c = Cache::Ref::FIFO->new( size => 3 );

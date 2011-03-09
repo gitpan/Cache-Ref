@@ -5,8 +5,8 @@ use warnings;
 
 use Test::More;
 
-use ok 'Cache::Ref::CLOCK';
-use ok 'Cache::Ref::GCLOCK';
+use_ok 'Cache::Ref::CLOCK';
+use_ok 'Cache::Ref::GCLOCK';
 
 foreach my $impl (qw(Cache::Ref::CLOCK Cache::Ref::GCLOCK)) {
     {

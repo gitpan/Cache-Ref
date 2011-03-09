@@ -5,7 +5,7 @@ use warnings;
 
 use Test::More;
 
-use ok 'Cache::Ref::Null';
+use_ok 'Cache::Ref::Null';
 
 my $cache = Cache::Ref::Null->new;
 

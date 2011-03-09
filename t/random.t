@@ -5,7 +5,7 @@ use warnings;
 
 use Test::More;
 
-use ok 'Cache::Ref::Random';
+use_ok 'Cache::Ref::Random';
 
 my $c = Cache::Ref::Random->new( size => 5 );
 

@@ -3,7 +3,7 @@ BEGIN {
   $Cache::Ref::FIFO::AUTHORITY = 'cpan:NUFFIN';
 }
 BEGIN {
-  $Cache::Ref::FIFO::VERSION = '0.04';
+  $Cache::Ref::FIFO::VERSION = '0.05'; # TRIAL
 }
 use Moose;
 
@@ -98,7 +98,7 @@ Yuval Kogman
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2010 by Yuval Kogman.
+This software is copyright (c) 2011 by Yuval Kogman.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.

@@ -5,7 +5,7 @@ use warnings;
 
 use Test::More;
 
-use ok 'Cache::Ref::LRU';
+use_ok 'Cache::Ref::LRU';
 
 foreach my $lru ( map { "Cache::Ref::Util::LRU::$_" } qw(Array List) ) {
     use_ok($lru);
